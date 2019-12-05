@@ -1,0 +1,41 @@
+.Button input[type=button]{
+    background-color: #C19B66;
+    border-radius: 10px;
+    border: #C19B66;
+    padding: 15px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #955033;
+  
+}
+
+.Button input[type=button]:hover{
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.Form input[type=file]{
+    background-color: #C19B66;
+    border-radius: 10px;
+    border: #C19B66;
+    padding: 15px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #955033;
+    /* text-align: center; */
+
+}
+
+/* .Form form{
+    background-color: #C19B66;
+    border-radius: 10px;
+    border: #C19B66;
+    padding: 15px;
+    margin: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    color: #955033;
+  
+} */

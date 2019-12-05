@@ -1,0 +1,13 @@
+.ProductContainer{
+    text-align: center;
+    background: #d4be90;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+}
+
+.Gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 100px;
+   
+}

@@ -1,0 +1,17 @@
+
+h2{
+    text-align: center;
+}
+
+.ChooseFile{
+    margin: 150px 0px 150px 0px;
+}
+
+.Result h3{
+    color: #955033;
+}
+
+.Result p{
+    color: #955033;
+    /* font-weight: bold; */
+}

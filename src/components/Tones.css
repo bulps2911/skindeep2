@@ -1,0 +1,31 @@
+.Tones{
+    margin: 15px;
+    padding: 15px;
+}
+
+.Tones-Title h3{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    color: #955033;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.Tones-Description{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    color: #955033;
+     /* border-style: solid; 
+     border-width:1px;  */
+    padding: 25px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.Tones-Image img{
+    height: 300px;
+    width: 300px;
+    margin: 25px;
+}

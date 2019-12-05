@@ -1,0 +1,17 @@
+.TonesContainer{
+    align-content: center;
+    padding: 0px 50px 50px 50px;
+/* background-color: brown; */
+/* padding: 15px; */
+
+}
+
+.norm h3{
+    text-align: right;
+    padding: 0px 250px 0px 0px;
+}
+
+.alt h3{
+    text-align:"left";
+    padding: 0px 0px 0px 0px;
+}
