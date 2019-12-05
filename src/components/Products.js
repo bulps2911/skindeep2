@@ -1,6 +1,4 @@
 import React from "react";
-// import logo from "./logo.svg";
-// import hero from "./hero.png";
 import "./Products.css";
 import axios from "axios";
 import Brand from "./Brand";
@@ -47,7 +45,7 @@ class Products extends React.Component {
     return (
       <div className="ProductContainer">
         {/* <header className="Products-header">PRODUCTS PAGE</header> */}
-        
+        <h2>Fenty Beauty</h2>
           <div className="Gallery">
             {this.state.products.map((each, idx) => (
               <div className="Card" key={idx}>

@@ -1,13 +1,17 @@
+.navbar{
+  margin: 0px;
+  padding: 0px;
+}
 .nav {
-  /* width: 100%; */
+
   float: left;
   padding: 5px;
   /* margin: 5px; */
   margin: 0px 10px 0px 0px;
   list-style: none;
   background: #c19b66;
-  min-width: 99%;
-  /* width: 100%; */
+  width:100%;
+  position: fixed;
 }
 .nav li {
   float: left;

@@ -1,13 +1,46 @@
 .ProductContainer{
     text-align: center;
+    border-radius: 25px;
     background: #d4be90;
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    padding: 20px;
+    margin: 70px;
+}
+
+.ProductContainer h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #955033;
+    font-size: 40px;
+    text-align: left;
+    margin: 20px 0px 0px 40px;
 }
 
 .Gallery {
+    margin: 100px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(8, 5vw);
-    grid-gap: 100px;
+     grid-template-columns: repeat(5, 1fr);
+    /*grid-template-rows: repeat(8, 5vw);
+    grid-gap: 100px; */
    
+}
+
+.Card h4{
+    color: #955033;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin: 15px 10px 20px 10px;
+
+}
+.Card img{
+    margin: 20px 10px 10px 10px;
+}
+
+
+.Card{
+    background-color: #C19B66;
+    margin: 15px;
+    text-align: center;
+    border-radius: 25px;
 }
