@@ -2,24 +2,19 @@
   text-align: center;
   background-color: #c19b66;
   min-height: 100vh;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* color: yellowgreen; */
   text-align: center;
   position: relative;
-  /* background-color: #d4be90; */
 }
 
 
 
 
 .App-header {
-  /* background-color: #282c34; */
-  /* background-color: pink; */
   min-height: 100vh;
 
   display: flex;
@@ -27,7 +22,6 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  /* color: yellowgreen; */
   text-align: center;
   position: relative;
 }

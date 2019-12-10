@@ -2,7 +2,6 @@ import React from "react";
 import Upload from "./Upload";
 import Result from "./Result";
 import axios from "axios";
-import { timingSafeEqual } from "crypto";
 
 class Upload1 extends React.Component {
   constructor(props) {
@@ -11,8 +10,6 @@ class Upload1 extends React.Component {
       chosenFile: null,
       uploading: false,
       successMsg: []
-      //   uploadProgress: {},
-      //   successfullUploaded: false
     };
     this.toggleButton = this.toggleButton.bind(this);
     this.onClickHandler = this.onClickHandler.bind(this);
@@ -23,9 +20,9 @@ class Upload1 extends React.Component {
   }
 
   onChangeHandler = event => {
-    console.log("hello");
-    console.log(event.target.files[0]);
-    console.log(event.target.files);
+    // console.log("hello");
+    // console.log(event.target.files[0]);
+    // console.log(event.target.files);
     this.setState({
       chosenFile: event.target.files[0],
       loaded: 0
@@ -36,17 +33,17 @@ class Upload1 extends React.Component {
     const newData = new FormData();
     const img = this.state.chosenFile;
     newData.append("file", img);
-    console.log("trying to upload to api");
-    console.log(newData);
+    // console.log("trying to upload to api");
+    // console.log(newData);
     axios
       .post("https://skin-deep.herokuapp.com/uploadapi", newData, {})
       .then(res => {
         //print response from server
         this.toggleButton();
-        console.log("see here");
-        console.log(res.data);
+        // console.log("see here");
+        // console.log(res.data);
         // const msg = this.state.successMsg;
-        console.log(this.state.successMsg);
+        // console.log(this.state.successMsg);
         this.setState(
           {
             successMsg: [...this.state.successMsg, res.data.rgb]
@@ -55,7 +52,7 @@ class Upload1 extends React.Component {
             return this.state.successMsg;
           }
         );
-        console.log(this.state.successMsg);
+        // console.log(this.state.successMsg);
       });
   }
 
@@ -63,8 +60,8 @@ class Upload1 extends React.Component {
     const { uploading } = this.state;
     let page;
     const { successMsg } = this.state;
-    const rgb = successMsg.map(successMsg => successMsg);
-    console.log(rgb);
+    // const rgb = successMsg.map(successMsg => successMsg);
+    // console.log(rgb);
 
     if (!uploading) {
       page = (
@@ -75,17 +72,15 @@ class Upload1 extends React.Component {
         />
       );
     } else {
-      // <div>
-        {successMsg.map(
+        successMsg.map(
           value =>
             (page = (
               <div className="try" key={value[0]}>
                 <Result rgb={value} onClick={this.toggleButton} />;
               </div>
             ))
-        )}
-      // </div>
-      // page = <Result rgb ={rgb} onClick={this.toggleButton} />;
+        )
+    
     }
     return (
       <div className="Upload1">
