@@ -1,8 +1,8 @@
 import React from "react";
 import Tones from "./Tones";
-import sun from "../tones/icon-sun.svg";
-import water from "../tones/icon-drop.svg";
-import neutral from "../tones/icon-tree.svg";
+import sun from "../assets/icon-sun.svg";
+import water from "../assets/icon-drop.svg";
+import neutral from "../assets/icon-tree.svg";
 import "./TonesContainer.css";
 
 function TonesContainer(props) {
